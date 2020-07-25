@@ -1,0 +1,104 @@
+//TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Noto&display=swap');
+//FONT FAMILY
+$heading-font-family: 'Cinzel Decorative', Fallback, serif;
+$body-font-family: 'Noto', Fallback, sans-serif;
+
+//FONT WEIGHT
+$fontStandard: 400;
+$fontSemibold: 700;
+$fontBold: 900;
+
+//FONT SIZE
+//Desktop
+$D_XXL_400: 400%;
+$D_XL_250: 250%;
+$D_lg_200: 200%;
+$D_std_180: 180%;
+$D_sm_130: 130%;
+$D_xs_100_CC: 100%;
+
+//Mobile
+$M_XXL_270: 250%;
+$M_XL_200: 200%;
+$M_lg_150: 150%;
+$M_std_120: 120%;
+$M_sm_108: 108%;
+$M_xs_100_CC: 100%;
+
+//Body
+$body_sm__14: 14px;
+$body__std__16: 16px;
+$body__lg__18: 18px;
+
+//LAYOUT
+$maxPageWidth: 1060px;
+
+$xs__320: 320px;
+$sm__480: 480px;
+$md__768: 768px;
+$lg__992: 992px;
+$xl__1200: 1200px;
+
+//PADDING
+$padding__sm__8: 8px;
+$padding__std__16: 16px;
+$padding__lg__24: 24px;
+
+$card__padding: 42px, 24px, 42px, 24px;
+
+//MARGINS
+$margin__sm__8: 8px;
+$margin__std__16: 16px;
+$margin__lg__24: 24px;
+$margin__XL__48: 48px;
+
+//COLOURS
+//Actions
+$error: #d32f2f;
+$warning: #ffa000;
+$info: #1976d2;
+$success: #43a047;
+
+//Yellows
+$Yellow__light: #ffe457;
+$Yellow__standard: #ff7a23;
+$Yellow__dark: #b25518;
+
+//Blues
+$Blue__dark: #0a167a;
+$Blue__standard: #143383;
+$Blue__light: #2346b0;
+$Blue__lightest: #d4defb;
+
+// Greys
+$Grey__dark: #1e2740;
+$Grey__standard: #424558;
+$Grey__light: #c4c4c6;
+$Grey__lightest: #f6f6f6;
+$Grey__white: #ffffff;
+
+// Reds
+$Red__standard: #d32f2f;
+
+//BOXSHADOW
+$lightBoxShadow:
+  0 2px 2px rgba(0,0,0,0.02),
+  0 8px 8px rgba(0,0,0,0.04);
+
+$darktBoxShadow:
+  0 2px 2px rgba(0,0,0,0.02),
+  0 4px 4px rgba(0,0,0,0.04),
+  0 8px 8px rgba(0,0,0,0.06),
+  0 16px 16px rgba(0,0,0,0.08);
+
+
+//BORDERS
+//Border radius
+$borderRadius__sma__8: 8px;
+$borderRadius__std__16: 16px;
+$borderRadius__lg__24: 24px;
+$borderRadius__round: 48px;
+
+//TRANSITION
+$transition: 250ms ease-in-out, transform 150ms ease;
