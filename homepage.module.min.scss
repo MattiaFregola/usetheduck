@@ -1,0 +1,48 @@
+@import 'variables.scss';
+@import 'buttons.min.css';
+@import 'typography.min.css';
+@import 'global.mixins.scss';
+
+#theDucked {
+    /*opacity: 0;*/
+    padding: $padding__std__16;
+    margin: $margin__std__16 auto 0;
+    display: block;
+    width: max-content;
+    height: 40px;
+    font-size: 26px;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    color: #485146;
+    transition: 1s linear;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F7F7F7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+#theDuck {
+  background-color: transparent;
+  margin: 20px auto 40px;
+  display: block;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18pt;
+  padding: 0.6em 1em;
+  transition-duration: 0.4s;
+}
+
+#theDuck:hover {
+  background-color: $Grey__white;
+  text-align: center;
+  color: white;
+  position:relative;
+  top:-1px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}

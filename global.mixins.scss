@@ -1,0 +1,81 @@
+@import 'variables.scss';
+
+//PADDING
+@mixin mx-padding-st {
+  padding: $padding__std__16 $padding__std__16 $padding__std__16 $padding__std__16;
+}
+
+/* PSEUDO CLASS LIKE ::before
+👇How to use
+div::after {
+    @include mx-pseudo;
+    top: -1rem; left: -1rem;
+    width: 1rem; height: 1rem;
+}
+*/
+@mixin mx-pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+/* RESPONSIVE RATIO
+👇How to use
+div {
+    @include mx-responsive-ratio(16,9);
+}
+*/
+@mixin mx-responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+/*MEDIA QUERIES
+👇How to use
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mx-mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}
+*/
+
+@mixin mx-mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin mx-full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+//HOVEER
+@mixin mx-hover {
+&:hover {
+  transition: $transition;
+  box-shadow: $darktBoxShadow;
+  cursor: pointer;
+  }
+}
