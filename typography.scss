@@ -40,16 +40,16 @@ h3, h4 {line-height: 1.3;}
 p {line-height: 1.75;}
 
 
-h1 {font-size: $M_XXL_270; letter-spacing: -0.2rem;}
-h2 {font-size: $M_XL_200; letter-spacing: -0.1rem;}
+h1 {font-size: $M_XXL_270;}
+h2 {font-size: $M_XL_200;}
 h3 {font-size: $M_lg_150;}
 h4 {font-size: $M_std_120;}
 h5 {font-size: $M_sm_108;}
 h6 {font-size: $M_xs_100_CC;}
 
 @media (min-width: $md__768) {
-h1 {font-size: $D_XXL_400; letter-spacing: -0.2rem;}
-h2 {font-size: $D_XL_250; letter-spacing: -0.1rem;}
+h1 {font-size: $D_XXL_400;}
+h2 {font-size: $D_XL_250;}
 h3 {font-size: $D_lg_200;}
 h4 {font-size: $D_std_180;}
 h5 {font-size: $D_sm_130;}
